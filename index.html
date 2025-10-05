@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Джаз-фанк: Свобода выражения через танец</title>
     <style>
-        /* Базовые стили */
         :root {
             --primary-color: #ff6b9d;
             --secondary-color: #2d3436;
@@ -27,7 +26,6 @@
             line-height: 1.6;
         }
         
-        /* Семантические блоки */
         .page-header {
             background: linear-gradient(135deg, var(--primary-color), #c44569);
             color: white;
@@ -77,7 +75,6 @@
             margin-top: 2rem;
         }
         
-        /* Карточки через классы (как рекомендовано в лекции) */
         .card {
             background: white;
             border-radius: 10px;
@@ -95,7 +92,6 @@
             margin: 1rem 0;
         }
         
-        /* Контейнер для адаптивности */
         .cards-container {
             display: flex;
             flex-wrap: wrap;
@@ -103,13 +99,13 @@
             justify-content: center;
         }
         
-        /* Изображения */
         .content-image {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
             border: 3px solid var(--primary-color);
             margin: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         
         .image-gallery {
@@ -124,7 +120,6 @@
             text-align: center;
         }
         
-        /* Типографика */
         .main-heading {
             font-size: 2.5rem;
             margin-bottom: 1rem;
@@ -148,7 +143,6 @@
             margin-bottom: 1rem;
         }
         
-        /* Списки */
         .feature-list {
             list-style: none;
             padding-left: 1rem;
@@ -166,7 +160,6 @@
             left: 0;
         }
         
-        /* Адаптивность через медиа-запросы */
         @media (max-width: 768px) {
             .main-heading {
                 font-size: 2rem;
@@ -196,21 +189,6 @@
             }
         }
         
-        @media (max-width: 480px) {
-            .main-heading {
-                font-size: 1.5rem;
-            }
-            
-            .page-header {
-                padding: 1rem;
-            }
-            
-            .main-content {
-                padding: 1rem 0.5rem;
-            }
-        }
-        
-        /* Скрытые элементы для доступности */
         .visually-hidden {
             position: absolute;
             width: 1px;
@@ -222,7 +200,6 @@
             border: 0;
         }
         
-        /* Ссылки */
         .content-link {
             color: var(--primary-color);
             text-decoration: none;
@@ -257,10 +234,10 @@
 
             <!-- Раздел 1: Личный опыт -->
             <section id="about" class="card">
-                <h2 class="section-heading">Почему я выбрал джаз-фанк</h2>
+                <h2 class="section-heading">Почему я выбрала джаз-фанк</h2>
                 
                 <figure>
-                    <img src="https://i.pinimg.com/736x/1b/0e/72/1b0e7287be10f8f2d30eb3816f2fbd7e.jpg" 
+                    <img src="images/jazz-funk.png" 
                          alt="Танцор джаз-фанка выражает эмоции через движение, демонстрируя пластику и грацию" 
                          class="content-image">
                     <figcaption class="text-content">Выразительность - ключевой элемент джаз-фанка</figcaption>
@@ -269,7 +246,7 @@
                 <p class="text-content">Джаз-фанк даёт мне свободу выражения моих эмоций и мыслей через движения тела. Этот танец сочетает в себе энергию хип-хопа, плавность джаза и выразительность контемпорари, позволяя экспериментировать и находить новые грани своего таланта.</p>
                 
                 <h3 class="subsection-heading">Мой танцевальный путь</h3>
-                <p class="text-content">Я танцую джаз-фанк уже <strong>1 год</strong> и за это время успел:</p>
+                <p class="text-content">Я танцую джаз-фанк уже <strong>1 год</strong> и за это время успела:</p>
                 <ul class="feature-list">
                     <li>Освоить базовые техники изоляции и контрастов</li>
                     <li>Участвовать в локальных танцевальных баттлах</li>
@@ -301,7 +278,7 @@
             <section id="technique" class="card">
                 <h2 class="section-heading">Технические особенности джаз-фанка</h2>
                 
-                <img src="https://i.pinimg.com/736x/58/23/71/582371795608391034.jpg" 
+                <img src="images/vibes.png" 
                      alt="Техника изоляции в джаз-фанке - танцор демонстрирует контроль над отдельными частями тела" 
                      class="content-image">
                 
@@ -376,24 +353,17 @@
                 
                 <div class="image-gallery">
                     <div class="gallery-item">
-                        <img src="https://i.pinimg.com/736x/16/81/81/16818198602272665.jpg" 
+                        <img src="images/jazz-funk.png" 
                              alt="Динамичное движение в джаз-фанке с резкой сменой позиций" 
                              class="content-image">
                         <p class="text-content">Динамика и энергия</p>
                     </div>
                     
                     <div class="gallery-item">
-                        <img src="https://i.pinimg.com/736x/58/23/71/582371795608391034.jpg" 
+                        <img src="images/vibes.png" 
                              alt="Пластика и грация в плавных движениях джаз-фанка" 
                              class="content-image">
                         <p class="text-content">Пластика и грация</p>
-                    </div>
-                    
-                    <div class="gallery-item">
-                        <img src="https://i.pinimg.com/736x/1b/0e/72/1b0e7287be10f8f2d30eb3816f2fbd7e.jpg" 
-                             alt="Эмоциональная выразительность через танец" 
-                             class="content-image">
-                        <p class="text-content">Эмоциональная выразительность</p>
                     </div>
                 </div>
                 
